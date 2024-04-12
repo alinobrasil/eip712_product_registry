@@ -31,7 +31,7 @@ It'll simulate this full workflow:
 -a buyer (customer/user) registers themself onchain as new owner
 
 ## EIP712 in action
-The test script `test/RegistryTest.js` simulates a chip that generates an EIP712 compliant signature (in the test named "a buyer claims ownership of a chip"). It uses `signTypedData` from Ethers.js v6 to generate the signature.
+The test script [`test/RegistryTest.js`]([url](https://github.com/alinobrasil/eip712_product_registry/blob/main/test/RegistryTest.js#L101)) simulates a chip that generates an EIP712 compliant signature (in the test named "a buyer claims ownership of a chip"). It uses `signTypedData` from Ethers.js v6 to generate the signature.
 
 It calls a `verify` function in a smart contract. The implementation is in `VerifyTypedData.sol`. 
 
